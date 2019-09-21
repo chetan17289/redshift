@@ -24,7 +24,7 @@ async def on_message(message):
     if message.channel.is_private == True:
         if message.content.startswith("-buy") or message.content.startswith("-close"):
             return
-        server = client.get_server('536486790975193089')
+        server = client.get_server('536486790975193089') #apka server id
         everyone_perms = discord.PermissionOverwrite(read_messages=False)
         user_perms = discord.PermissionOverwrite(read_messages=True)
         everyone = discord.ChannelPermissions(target=server.default_role, overwrite=everyone_perms)
